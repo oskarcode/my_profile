@@ -1,0 +1,22 @@
+
+
+django readiness:
+- pip install django
+-django-admin
+-django-admin createproject {name}
+-python manage.py startapp {name}
+
+
+work on files:
+blog app:
+-views.py : has two functions, all_blogs-> render all_blogs.html, detail-> render every blog detail
+-models.py: this is where we create our database, in this case, we ceated a Blog class as a table in database which containts columns such as: /
+title, description, date. And also put a self function to render the title in admin backend
+-admin.py: we need to add class name in models to this file with, admin.site.register({name of the class})/
+so the admin can get access to this table
+-apps.py: need to add the name of app in this file to the settings.py
+-templates/{name of app}: creat tempplate for differnet function in views.py
+-media: where we put all pictures, need to set the url in settings.py 
+-static: where css and photo resides for the application
+
+
